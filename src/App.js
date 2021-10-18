@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Note from "./components/Note";
-import Create from "./components/Create";
+import Note from "./pages/Note";
+import Create from "./pages/Create";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 
 const theme = createTheme({
@@ -11,7 +11,7 @@ const theme = createTheme({
     },
   },
 });
- 
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
